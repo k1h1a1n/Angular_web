@@ -1,0 +1,26 @@
+<!-- <mat-toolbar class="toolbar">
+    <label class="durity_label">Durity</label>
+    <div class="divtoolbar">
+      <button (click) = 'navigateabout()' class="spac"><b class="font"> About Will</b></button>
+      <button (click) = 'navigateyour()' class="space"><b class="font"> Your Will</b></button>
+      <button (click) = 'navigatewho()' class="space"><b class="font"> Who's in your Will</b></button>
+      <button  class="invite"><b class="font">Invite</b></button>
+      <button  class="space"><b class="font">Rohit Sharma's Account</b></button>
+    </div>
+  </mat-toolbar>
+  <router-outlet></router-outlet> -->
+  <mat-toolbar class="toolbar">
+    <label class="durity_label">Durity</label>
+    <nav class="main" mat-tab-nav-bar>
+      <a class="main1" mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.link"
+      routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+     {{link.label}}
+    </a>
+    </nav>
+    <button  class="invite"><b class="font">Invite</b></button>
+    <button  class="space"><b class="font">Rohit Sharma's Account</b></button>
+  </mat-toolbar>
+  <router-outlet></router-outlet>

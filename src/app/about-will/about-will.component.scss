@@ -1,0 +1,27 @@
+::ng-deep .mat-card{
+    box-shadow: 0px 0px 4px 1px #d7d7d7;
+    background-color: #fcfcfc;
+    border-radius: 8px 8px 8px 8px;
+    height: 300px;
+    width: 300px; 
+    overflow: hidden;
+}
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle{
+    background-color: #163899;
+}
+.save{
+    background-color: #163899;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 0px 0px 3px 1px #d7d7d7;
+    border-width: 1px;
+    border-top: #3f3f3f;
+    border-bottom: #3f3f3f;
+    border-left: #3f3f3f;
+    border-right: #3f3f3f;
+    justify-content: center;
+    display: block;
+    border-radius: 20px;
+}
